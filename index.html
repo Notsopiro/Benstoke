@@ -1,0 +1,665 @@
+<!-- 1. Create a simple HTML web page to display personal details using 
+various text formatting tags such as bold, italic, underline, superscript, 
+and subscript (any 10 tags).  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details</title>
+</head>
+<body>
+
+    <h1>Curriculum Vitae: <mark>John Doe</mark></h1>
+
+    <hr> <p><b>Name:</b> John Doe</p>
+
+    <p><b>Occupation:</b> <i>Software Developer</i></p>
+
+    <p><u>Current Location:</u> New York, USA</p>
+
+    <p><strong>Contact:</strong> john.doe@example.com</p>
+
+    <p><small>Employee ID: 5544-321</small></p>
+
+    <p>Joined on: May 10<sup>th</sup>, 2024</p>
+
+    <p>Favorite Chemical Compound: H<sub>2</sub>O (Water)</p>
+
+    <p>Latest Certification: <ins>AWS Cloud Practitioner</ins></p>
+
+    <p>Previous Status: <del>Student</del></p>
+
+    <p>Favorite Code Snippet: <code>console.log("Hello World");</code></p>
+
+</body>
+</html> -->
+
+<!-- ================================================================= -->
+
+<!-- 2. Design a web page that includes an image, a hyperlink to another 
+website, and a nested table showing student information.   -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information Portal</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .nested-table { width: 100%; margin: 0; }
+        .nested-table td { border: 1px dashed gray; }
+    </style>
+</head>
+<body>
+
+    <h2>Student Profile Page</h2>
+
+    <img src="https://via.placeholder.com/150" alt="Student Profile Picture" width="150">
+
+    <br><br>
+
+    <a href="https://www.google.com" target="_blank">Visit External Resource</a>
+
+    <h3>Student Records</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Full Name</th>
+                <th>Academic Performance (Nested Table)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Alice Johnson</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td><b>Subject</b></td>
+                            <td><b>Grade</b></td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>Database Systems</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Bob Smith</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td><b>Subject</b></td>
+                            <td><b>Grade</b></td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td>A-</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html> -->
+
+<!-- ================================================================= -->
+
+<!-- 3. Develop an HTML form to collect user details including name, email, 
+gender, date of birth, and a submit button.  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details Form</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        form { max-width: 400px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="date"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        .gender-group label { display: inline; font-weight: normal; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="post">
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="gender-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+</html> -->
+
+<!-- 4. Create a web page and apply inline, internal, and external CSS to style 
+headings, paragraphs, and tables.  -->
+
+<!-- table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 2px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+} -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styling Methods</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #fafafa;
+            padding: 40px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: navy; border-bottom: 2px solid navy; padding-bottom: 10px;">
+        Applying CSS Styles
+    </h1>
+
+    <p>
+        This paragraph is styled using <b>Internal CSS</b> located in the head section. 
+        It controls the font size, color, and line spacing for all paragraphs on this page.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Location</th>
+                <th>Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inline</td>
+                <td>Inside HTML tag</td>
+                <td>Highest</td>
+            </tr>
+            <tr>
+                <td>Internal</td>
+                <td>Inside &lt;style&gt; tag</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>External</td>
+                <td>Separate .css file</td>
+                <td>Lowest</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html> -->
+
+<!-- 5. Design a responsive web page using Bootstrap Grid System and 
+Bootstrap components such as navbar, cards, and buttons.  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DevPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Our Services</h2>
+                <p>Responsive layout using the Bootstrap Grid.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Design</h5>
+                        <p class="card-text">Creating beautiful, responsive interfaces with modern tools.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Development</h5>
+                        <p class="card-text">Robust back-end solutions paired with seamless front-end code.</p>
+                        <a href="#" class="btn btn-success">View Projects</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">Ensuring your website ranks high on all major search engines.</p>
+                        <a href="#" class="btn btn-warning">Get Audit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+<!-- 6. Write a JavaScript program to validate form inputs by checking empty 
+fields and validating email format before submission.  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 30px;
+        }
+
+        .form-box {
+            max-width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            height: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>Login</h2>
+        <form id="vForm" onsubmit="return validate()">
+            <input type="text" id="name" placeholder="Name">
+            <div id="nErr" class="error"></div>
+
+            <input type="text" id="email" placeholder="Email">
+            <div id="eErr" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let nErr = document.getElementById("nErr");
+            let eErr = document.getElementById("eErr");
+            let valid = true;
+
+            nErr.innerText = "";
+            eErr.innerText = "";
+
+            if (name.trim() === "") {
+                nErr.innerText = "Name is required";
+                valid = false;
+            }
+
+            let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email.trim() === "") {
+                eErr.innerText = "Email is required";
+                valid = false;
+            } else if (!pattern.test(email)) {
+                eErr.innerText = "Invalid email format";
+                valid = false;
+            }
+
+            if (valid) alert("Success!");
+            return valid;
+        }
+    </script>
+
+</body>
+
+</html> -->
+
+<!-- 7. Create a web page that uses JavaScript and DOM manipulation to 
+dynamically display and update content based on user interaction. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="heading">Hello, User!</h2>
+    <div id="box">Original Content</div>
+
+    <button onclick="updateContent()">Change Text</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="resetPage()">Reset</button>
+
+    <script>
+        function updateContent() {
+            document.getElementById("heading").innerHTML = "Content Updated!";
+            document.getElementById("box").innerHTML = "New Dynamic Text";
+        }
+
+        function changeStyle() {
+            let box = document.getElementById("box");
+            box.style.backgroundColor = "coral";
+            box.style.borderRadius = "50%";
+            box.style.color = "white";
+        }
+
+        function resetPage() {
+            document.getElementById("heading").innerHTML = "Hello, User!";
+            let box = document.getElementById("box");
+            box.innerHTML = "Original Content";
+            box.style.backgroundColor = "lightblue";
+            box.style.borderRadius = "0%";
+            box.style.color = "black";
+        }
+    </script>
+
+</body>
+</html> -->
+
+<!-- 8. Develop a simple calculator using JavaScript functions and switch-case 
+statements to perform arithmetic operations.  -->
+
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .calc-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #res {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc-box">
+        <input type="number" id="n1" placeholder="Number 1" />
+        <input type="number" id="n2" placeholder="Number 2" />
+
+        <select id="op">
+            <option value="add">Add (+)</option>
+            <option value="sub">Subtract (-)</option>
+            <option value="mul">Multiply (*)</option>
+            <option value="div">Divide (/)</option>
+        </select>
+
+        <button onclick="calc()">Calculate</button>
+        <div id="res">Result: 0</div>
+    </div>
+
+    <script>
+        function calc() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            let op = document.getElementById("op").value;
+            let result;
+
+            switch (op) {
+                case "add":
+                    result = a + b;
+                    break;
+                case "sub":
+                    result = a - b;
+                    break;
+                case "mul":
+                    result = a * b;
+                    break;
+                case "div":
+                    result = b !== 0 ? a / b : "Error (Div by 0)";
+                    break;
+                default:
+                    result = "Invalid";
+            }
+
+            document.getElementById("res").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!-- 9/10. Write a PHP script to display a “Welcome” message along with the 
+current system date and time.  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        form { max-width: 300px; border: 1px solid #ccc; padding: 15px; }
+        input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+
+    <h2>User Submission Form</h2>
+    <form action="process.php" method="POST">
+        <label>Enter Name:</label>
+        <input type="text" name="username" required>
+        
+        <label>Enter City:</label>
+        <input type="text" name="city" required>
+        
+        <button type="submit">Submit Data</button>
+    </form>
+
+</body>
+</html> -->
+
+<!-- 11. Develop a PHP program to perform string manipulation operations 
+such as finding string length, reversing a string, and extracting a 
+substring.  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Input</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        form { max-width: 300px; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #333; color: white; border: none; }
+    </style>
+</head>
+<body>
+
+    <h2>String Operations</h2>
+    <form action="process1.php" method="POST">
+        <label>Enter Text:</label>
+        <input type="text" name="user_string" required>
+        
+        <label>Substring Start Index:</label>
+        <input type="number" name="start" value="0">
+        
+        <label>Substring Length:</label>
+        <input type="number" name="len" value="5">
+        
+        <button type="submit">Process String</button>
+    </form>
+
+</body>
+</html> -->
+
+<!-- Write a PHP script to store multiple values in an array and display the 
+array elements using loops.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Input</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        form { max-width: 300px; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #444; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Array Storage</h2>
+    <form action="process2.php" method="POST">
+        <label>Enter items (comma separated):</label>
+        <input type="text" name="items" placeholder="e.g. Red, Green, Blue" required>
+        <button type="submit">Display Array</button>
+    </form>
+
+</body>
+</html>
